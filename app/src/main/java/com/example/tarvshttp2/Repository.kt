@@ -48,6 +48,8 @@ class Repository {
                     } else {
                         emitter.onComplete()
                     }
+
+                    response.body()?.close()
                 }
 
             })
